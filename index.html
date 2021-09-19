@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-value">
+        <input type="text" readonly value="#FFFFFF" />
+        <button id="copy">
+          <img src="./copy.svg" alt="Copy color" />
+        </button>
+      </div>
+      <button id="change-color">Change color</button>
+    </div>
+
+    <div class="modal-wrapper">
+      <h2>Copied 😄</h2>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
