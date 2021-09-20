@@ -6,14 +6,10 @@ const modal = document.querySelector(".modal-wrapper");
 changeBtn.addEventListener("click", changeColor);
 copyBtn.addEventListener("click", copyColor);
 
-let color = "#";
-
 const colorHex = ["a", "b", "c", "d", "e", "f", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function changeColor() {
-  if (color.length > 6) {
-    color = "#";
-  }
+  let color = "#";
 
   for (let i = 0; i < 6; i++) {
     color += colorHex[Math.floor(Math.random() * colorHex.length)];
